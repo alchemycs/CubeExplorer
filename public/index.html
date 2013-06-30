@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cube Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web page for interacting with the Freetronics Cube4">
+    <meta name="author" content="@AlchemyCS">
+
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/js/vendor/Modernizr.custom.js"></script>
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">-->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">-->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">-->
+    <!--<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">-->
+    <!--<link rel="shortcut icon" href="/ico/favicon.png">-->
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Cube Explorer</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li ><a href="#/cli">CLI</a></li>
+                    <li ><a href="#/colour-explorer">Colour Explorer</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-heart"></span>Other Sites<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.earthexplorer.info">Earth Explorer<span class="pull-right"><img src="http://www.earthexplorer.info/img/ico/favicon.png" alt=""/></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span>Contact<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.twitter.com/AlchemyCS">@AlchemyCS<span class="icon-twitter pull-right"></span></a></li>
+                            <li><a href="https://github.com/AlchemyCS">Github<span class="icon-github pull-right"></span></a></li>
+                            <li><a href="http://coderwall.com/alchemycs">Coderwall<span class="icon-list-alt  pull-right"></span></a></li>
+                            <!--<li><a href="http://forr.st/-AlchemyCS">Forrst<span class="icon-leaf pull-right"></span></a></li>-->
+                            <li><a href="http://au.linkedin.com/in/mrmchugh">LinkedIN<span class="icon-linkedin-sign pull-right"></span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/about">About</a></li>
+                </ul>
+                <p class="navbar-text pull-right">
+                    Cube: <span class="label" ng-class="{'label-success':cubeAvailable}" ng-bind="cubeAvailable&&'online'||'offline'"></span>
+                </p>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <div class="alert alert-block alert-danger">
+        <a class="close" data-dismiss="alert" href="#">&times;</a>
+        <p>
+            <strong>WARNING:</strong> DO NOT expose this server to the public Internet.
+        </p>
+        <p>
+            At present the code contains NO security and allows multiple simultaneous connections to your cube!
+        </p>
+    </div>
+
+    <ng-view></ng-view>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script data-main="/js/main" src="/js/vendor/require.js"></script>
+
+</body>
+</html>

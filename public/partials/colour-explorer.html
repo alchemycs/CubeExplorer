@@ -1,0 +1,38 @@
+<div>
+    <div class="page-header">
+        <h3>Colour Explorer</h3>
+    </div>
+
+    <p class="lead">
+        Explore all the colours that your cube can make.
+    </p>
+    <hr/>
+
+    <div ng-hide="nativeColourPicker" >
+        <div class="alert alert-block">
+            <p>
+                Unfortunately your browser doesn't support native colour pickers.
+                <a href="http://caniuse.com/#search=color%20input">Check which browsers support native 'color' input</a>
+            </p>
+            <p>
+                Please ensure you enter the colour prefixed by the hash (#) symbol.
+            </p>
+        </div>
+        <div class="alert alert-info">
+            Don't worry, I'll get some kind of colour picker fallback widget at some point.
+        </div>
+    </div>
+
+    <form class="form-horizontal">
+        <div class="control-group" ng-class="{error:!cubeColour}">
+            <label class="control-label" for="cubeColour">Cube Colour:</label>
+            <div class="controls">
+                <input id="cubeColour" type="color" ng-model="cubeColour" ng-pattern="/^#[0-9a-fA-F]{6}/"/><br/>
+                <input type="text" ng-hide="!nativeColourPicker" ng-model="cubeColour" ng-pattern="/^#[0-9a-fA-F]{6}/">
+            </div>
+        </div>
+    </form>
+
+
+
+</div>

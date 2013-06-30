@@ -1,0 +1,37 @@
+{
+  "name": "CubeExplorer",
+  "version": "0.0.0",
+  "description": "Web interaction with Freetronics CUBE4",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.4",
+    "ejs": "*",
+    "serialport": "~1.1.1",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt": "~0.4.1",
+    "grunt-recess": "~0.3.3",
+    "grunt-contrib-jshint": "~0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alchemycs/CubeExplorer.git"
+  },
+  "author": "@AlchemyCS",
+  "license": "BSD",
+  "main": "app.js",
+  "keywords": [
+    "Freetronics",
+    "CUBE4"
+  ],
+  "bugs": {
+    "url": "https://github.com/alchemycs/CubeExplorer/issues"
+  }
+}

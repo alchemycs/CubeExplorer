@@ -1,0 +1,42 @@
+<div>
+    <div class="page-header">
+        <h2>CLI <small>Send serial commands directly</small></h2>
+    </div>
+    <p class="lead">
+        Use the same commands as the serial control for the cube. Please refer to the
+        <a href="http://www.freetronics.com/pages/cube4-rgb-cube-command-list" target="_blank">CUBE4 RGB Cube Command List</a>.
+    </p>
+    <hr/>
+
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well" style="padding: 8px 0;">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Quick Reference</li>
+                    <li><a ng-click="setCommand($event);">all [colour];</a></li>
+                    <li><a ng-click="setCommand($event);">shift [axis] [direction];</a></li>
+                    <li><a ng-click="setCommand($event);">set [location] [colour];</a></li>
+                    <li><a ng-click="setCommand($event);">next [colour];</a></li>
+                    <li><a ng-click="setCommand($event);">setplane [axis] [offset] [colour];</a></li>
+                    <li><a ng-click="setCommand($event);">copyplane [axis] [source offset] [destination offset];</a></li>
+                    <li><a ng-click="setCommand($event);">moveplane [axis] [source offset] [destination offset] [colour];</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="span9">
+            <form class="form-inline">
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="text" class="input-xxlarge" ng-model="cubeCommand" ng-pattern="/;$/"/>
+                        <button class="btn btn-primary" ng-click="sendCubeCommand(cubeCommand)" ng-disabled="!cubeCommand">Send</button>
+                        <span class="help-block">
+                            Don't forget to finish the command with a semi-colon (;)
+                        </span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

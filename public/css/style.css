@@ -1,0 +1,31 @@
+@import url(bootstrap.css);
+@import url(bootstrap-responsive.css);
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #008000;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #008000;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none;
+}
+
+@media (min-width:980px) {
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+
+}
