@@ -1,4 +1,4 @@
-#Cube Fun
+#Cube Explorer
 
 I wrote this to make it a little easier to explore the
 [Freetronics CUBE4 LED Cube](http://www.freetronics.com/products/cube4-4x4x4-rgb-led-cube) - and I wanted an excuse to do something with sockets and controlling a hardware device from a browser.
