@@ -1,8 +1,7 @@
 #Cube Fun
 
 I wrote this to make it a little easier to explore the
-[Freetronics CUBE4 LED Cube](http://www.freetronics.com/products/cube4-4x4x4-rgb-led-cube)
- - and I wanted an excuse to do something with sockets and controlling a hardware device from a browser.
+[Freetronics CUBE4 LED Cube](http://www.freetronics.com/products/cube4-4x4x4-rgb-led-cube) - and I wanted an excuse to do something with sockets and controlling a hardware device from a browser.
 
 I just did this in a few hours, so I have a lot more work I want to do with it, but wanted to get it out there in case
 someone else found it useful.
@@ -14,7 +13,7 @@ available to the public Internet anyone can control your cube! Also, EVERYONE wh
 ##Requirements
 Obviously you'll need to have one of the Freetronics LED cubes loaded with the serial control sketch.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/c8hrxd72H2E?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+([Watch a Freetronics Cube4 in action](http://www.youtube.com/embed/c8hrxd72H2E?feature=player_detailpage))
 
 The `colour explorer` page will be most fun if you have [a browser that supports the `color` input type](http://caniuse.com/#search=color%20input).
 At the time of writing this is basically Chrome and Opera.
