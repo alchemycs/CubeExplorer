@@ -11,7 +11,8 @@ define(['vendor/angular'], function(angular) {
 
             $scope.$watch('cubeColour', function(newColour) {
                 if (newColour) {
-                    $scope.sendCubeCommand('all '+ newColour.substring(1) + ';');
+                    $scope.executeCubeCommand('all '+ newColour.substring(1) + ';');
+                    $scope.$emit('command', 'all '+ newColour.substring(1) + ';');
                 }
             });
 

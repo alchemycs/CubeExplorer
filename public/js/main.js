@@ -47,7 +47,7 @@ require(['socketio', 'vendor/jquery', 'vendor/angular', 'controllers/index', 'sa
 
             $rootScope.cubeAvailable = false;
 
-            $rootScope.sendCubeCommand = function(command) {
+            $rootScope.executeCubeCommand = function(command) {
                 if (socket) {
                     console.log('Sending cube command: ', command);
                     socket.emit('send cube command', {
