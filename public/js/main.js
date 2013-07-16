@@ -17,6 +17,9 @@ require.config({
         'vendor/angular': {
             deps: [ 'vendor/jquery' ], //Ok, angular doesn't require jquery, but you get more out of `angular.element` if you do!
             exports: 'angular'
+        },
+        'vendor/kinetic':{
+            exports:'Kinetic'
         }
     },
     paths: {
